@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecomerce-fe-deployment
+  namespace: ecommerce
+spec:
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: ecommerce-fe-deployment
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: ecommerce-fe-deployment
+      namespace: ecommerce
+    spec:
+      containers:
+        - image: registry.h1euda.click/ecommerce-storage/ecommerce-fe:v1
+          imagePullPolicy: IfNotPresent
+          name: ecommerce-fe
+          ports:
+            - containerPort: 80
+              name: tcp
+              protocol: TCP
+      imagePullSecrets:
+        - name: harbor-secret
+      restartPolicy: Always

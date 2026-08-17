@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ecommerce-be-ingress
+  namespace: ecommerce
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: api-ecommerce-be-onpre.devopstest.vn
+      http:
+        paths:
+          - backend:
+              service:
+                name: ecommerce-be-service
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix
