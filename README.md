@@ -55,7 +55,7 @@ Xử lý những khi bị quá tải pod sẽ scale để giảm tải trên pod
 
 ## 2. Monitoring
 
-### 2.1 Prometheus
+### 2.1. Prometheus
 Kéo dữ liệu , quét các thông số về tốc độ hoạt động của web
 
 <p align="center">
@@ -66,7 +66,7 @@ Kéo dữ liệu , quét các thông số về tốc độ hoạt động của 
 
 ---
 
-### 2.2 Grafana:
+### 2.2. Grafana:
 Hiển thị chính xác các thông số liên quan đến network, cpu, ram, bộ nhớ 
 
 <p align="center">
@@ -75,5 +75,38 @@ Hiển thị chính xác các thông số liên quan đến network, cpu, ram, b
   <i> Grafana hiển thị thông số về cpu và bộ nhớ được sử dụng của dự án ecommerce trên cluster với pods fe,be</i>
 </p>
 
+---
+
+### 2.3. Uptime-kuma:
+Theo dõi tình trạng uptime/downtime của web từ đó gửi thông báo về telegram
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/70644bcd-fe6d-42e7-b1c2-353e903202ea" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Theo dõi trạn thái web theo chu kỳ và khi có thay đổi sẽ gửi thông báo về telegram</i>
+</p>
+
+
+## 3. Backup
+
+### 3.1. Minio:
+Để lưu lại các bản backup dữ liệu và các bản restore
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ea33eec2-5f30-4b37-8d6b-296158e3b7b0" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Folder gồm các file backup và đã được restore của namespace ecommerce</i>
+</p>
+
+---
+
+### 3.2. Velero:
+Được sử dụng trên cluster để liên kết giữa minio và k8s (thực hiện lưu trữ hoặc restore)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/57aa2ba5-8971-41e6-8664-562ae160b40b" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Ví dụ lưu trữ dự án với namespace ecommerce</i>
+</p>
 
 
