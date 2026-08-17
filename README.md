@@ -5,6 +5,8 @@ Tạo file deployment cho `frontend` và `backend` bằng cách kéo image từ 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d45069cc-a980-4ad8-8cdf-b0afe551afa1" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Đã push thành công image frontend và backend lên Harbor Private Registry</i>
 </p>
 
 
@@ -18,11 +20,13 @@ Cấu hình các tài nguyên `Service` và `Ingress` trên cluster.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f6a0c1fe-a73c-4f20-8d32-c0f952f2ab79" width="80%" alt="Harbor Registry">
   <br>
-  <i> Đã push thành công image frontend và backend lên Harbor Private Registry</i>
+  <i> Tạo ingress để truy cập service đã tạo</i>
 </p>
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/59000b87-fcb7-4f82-913f-d87391412148" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Web service khi truy cập dựa trên đường link đã tạo từ ingress</i>
 </p>
 
 
@@ -34,5 +38,7 @@ Cập nhật code trực tiếp trên rancher, đồng thời sử dụng secret
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/d8635069-b587-4d36-be08-0acc69dfa2c6" width="80%" alt="Harbor Registry">
+  <br>
+  <i> sử dụng configmap để cấu hình trực tiếp trên rancher kết hợp secret để hỗ trợ bảo mật</i>
 </p>
 
