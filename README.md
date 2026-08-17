@@ -109,4 +109,18 @@ Theo dõi tình trạng uptime/downtime của web từ đó gửi thông báo v�
   <i> Ví dụ lưu trữ dự án với namespace ecommerce</i>
 </p>
 
+### Về cấu trúc:
+
+Đầu tiên ở phần triển khai bằng cách tạo file yaml với:
+ Deployment: triển khai bằng Dockerfile được pull từ private registry
+ Service: để cân bằng tải, cho phép truy cập từ trong cụm k8s
+ Ingress: để truy cập web dựa trên port mà service đã tạo
+ ConfigMap: Chèn dữ liệu trực tiếp trên k8s 
+ Secret: Tăng tính bảo mật của web thông qua mã hóa các tham số trực tiếp ví dụ localhost, port, user, password
+ HorizontalPodAutoscale: Để kiểm soát khi có lượng truy cập lớn, tránh downtime (giảm tải cho pod nhất định)
+Tiếp theo ở phần monitoring:
+  Các ứng dụng monitoring được triển khải dựa trên helm chart với mô hình pv-pvc-storageClass
+Cuối cùng backup với velero:
+  Từ việc liên kết với minio qua accessKey và secretkey, minio sẽ là nơi được lưu và lấy dữ liệu để restore.
+
 
