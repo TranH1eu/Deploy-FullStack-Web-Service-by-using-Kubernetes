@@ -4,8 +4,9 @@
 Tạo file deployment cho `frontend` và `backend` bằng cách kéo image từ Private Registry (`Harbor`).
 
 <p align="center">
-  <img src="[LINK_ANH_HARBOR](https://github.com/user-attachments/assets/b5ec6e3c-3904-4a5f-ae62-e3f1585a2cca)" width="80%" alt="Harbor Registry">
+  <img src="https://github.com/user-attachments/assets/d45069cc-a980-4ad8-8cdf-b0afe551afa1" width="80%" alt="Harbor Registry">
 </p>
+
 
 
 
