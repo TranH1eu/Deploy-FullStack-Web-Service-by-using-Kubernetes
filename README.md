@@ -42,3 +42,38 @@ Cập nhật code trực tiếp trên rancher, đồng thời sử dụng secret
   <i> sử dụng configmap để cấu hình trực tiếp trên rancher kết hợp secret để hỗ trợ bảo mật</i>
 </p>
 
+---
+
+### 1.4. Cấu hình hpa (horizontal pod autoscale) 
+Xử lý những khi bị quá tải pod sẽ scale để giảm tải trên pod cố định
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0afbc9db-cfbb-48cc-ba1d-3d866a1c6c41" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Giả lập quá tải cpu để giảm tải cho 1 cluster nhất định</i>
+</p>
+
+## 2. Monitoring
+
+### 2.1 Prometheus
+Kéo dữ liệu , quét các thông số về tốc độ hoạt động của web
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/836178b7-e963-4fbd-b460-db349b10897e" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Danh sách các exporter và trạng thái kết nối</i>
+</p>
+
+---
+
+### 2.2 Grafana:
+Hiển thị chính xác các thông số liên quan đến network, cpu, ram, bộ nhớ 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6031772f-f312-48b5-a283-c39f7c24cffd" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Grafana hiển thị thông số về cpu và bộ nhớ được sử dụng của dự án ecommerce trên cluster với pods fe,be</i>
+</p>
+
+
+
