@@ -17,6 +17,8 @@ Cấu hình các tài nguyên `Service` và `Ingress` trên cluster.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f6a0c1fe-a73c-4f20-8d32-c0f952f2ab79" width="80%" alt="Harbor Registry">
+  <br>
+  <i> Đã push thành công image frontend và backend lên Harbor Private Registry</i>
 </p>
 
 <p align="center">
