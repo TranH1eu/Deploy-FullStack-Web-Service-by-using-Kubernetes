@@ -23,7 +23,11 @@ Cấu hình các tài nguyên `Service` và `Ingress` trên cluster.
   <img src="https://github.com/user-attachments/assets/59000b87-fcb7-4f82-913f-d87391412148" width="80%" alt="Harbor Registry">
 </p>
 
-### 1.2. Tạo file configmap 
+
+
+---
+
+### 1.3. Tạo file configmap 
 Cập nhật code trực tiếp trên rancher, đồng thời sử dụng secret để lưu các thông tin tăng tính bảo mật(localhost, port, tài khoản, mật khẩu, ...)
 
 <p align="center">
