@@ -1,4 +1,4 @@
-1.	Triển khai dự án
+1. Triển khai dự án
 
 1.1	Tạo file yaml deployment cho frontend,be với việc kéo dockerfile từ private registry (harbor)
 <img width="945" height="498" alt="image" src="https://github.com/user-attachments/assets/0272c678-54b7-4cd3-b235-28a947678d42" />
